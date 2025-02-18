@@ -50,7 +50,6 @@ import java from '@/../public/img/icons/java.svg';
 import flask from '@/../public/img/icons/flask.svg';
 import django from '@/../public/img/icons/django.svg';
 import springBoot from '@/../public/img/icons/spring-boot.svg';
-import matlab from '@/../public/img/icons/matlab.svg';
 import hibernate from '@/../public/img/icons/hibernate.svg';
 import nodejs from '@/../public/img/icons/nodejs.svg';
 import streamlit from '@/../public/img/icons/streamlit.svg';
@@ -164,7 +163,6 @@ const Icon : Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
 
   // Additional Icons
   graphql,
-  matlab,
 };
 
 export { Icon };

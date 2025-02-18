@@ -62,7 +62,6 @@ type IconName =
   | 'gcp'
   | 'azure'
   | 'graphql' // Added GraphQL
-  | 'matlab' // Added MATLAB (if relevant)
   | 'docker' // Docker Compose
 
 export { type IconName };
