@@ -50,6 +50,7 @@ import java from '@/../public/img/icons/java.svg';
 import flask from '@/../public/img/icons/flask.svg';
 import django from '@/../public/img/icons/django.svg';
 import springBoot from '@/../public/img/icons/spring-boot.svg';
+import matlab from '@/../public/img/icons/matlab.svg';
 import hibernate from '@/../public/img/icons/hibernate.svg';
 import nodejs from '@/../public/img/icons/nodejs.svg';
 import streamlit from '@/../public/img/icons/streamlit.svg';
@@ -69,12 +70,10 @@ import docker from '@/../public/img/icons/docker.svg';
 import kubernetes from '@/../public/img/icons/kubernetes.svg';
 import maven from '@/../public/img/icons/maven.svg';
 import gradle from '@/../public/img/icons/gradle.svg';
-import jupyterNotebook from '@/../public/img/icons/jupyter-notebook.svg';
 
 // Libraries & Data Science
 import numpy from '@/../public/img/icons/numpy.svg';
 import pandas from '@/../public/img/icons/pandas.svg';
-import scikitLearn from '@/../public/img/icons/scikit-learn.svg';
 import opencv from '@/../public/img/icons/opencv.svg';
 
 // Cloud Platforms
@@ -84,7 +83,6 @@ import azure from '@/../public/img/icons/azure.svg';
 
 // Additional Icons
 import graphql from '@/../public/img/icons/graphql.svg';
-import dockerCompose from '@/../public/img/icons/docker.svg';
 
 const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
   // Existing icons
@@ -117,7 +115,8 @@ const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
 
   // Frameworks & Platforms
   flask,
-  django,
+  springBoot,
+  matlab,
   hibernate,
   nodejs,
   streamlit,
@@ -164,6 +163,7 @@ const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
   codepen,
   prisma,
   stripe,
+  django: django, // Added Django
 };
 
 type Props = SVGProps<SVGSVGElement> & {

@@ -42,12 +42,10 @@ const About = () => {
     { title: 'Kubernetes', iconName: 'kubernetes', href: 'https://kubernetes.io/' },
     { title: 'Maven', iconName: 'maven', href: 'https://maven.apache.org/' },
     { title: 'Gradle', iconName: 'gradle', href: 'https://gradle.org/' },
-    { title: 'Jupyter Notebook', iconName: 'jupyterNotebook', href: 'https://jupyter.org/' },
 
     // Libraries & Data Science
     { title: 'NumPy', iconName: 'numpy', href: 'https://numpy.org/' },
     { title: 'Pandas', iconName: 'pandas', href: 'https://pandas.pydata.org/' },
-    { title: 'Scikit-learn', iconName: 'scikitLearn', href: 'https://scikit-learn.org/' },
     { title: 'OpenCV', iconName: 'opencv', href: 'https://opencv.org/' },
 
     // Cloud Platforms
