@@ -84,7 +84,8 @@ import azure from '@/../public/img/icons/azure.svg';
 import graphql from '@/../public/img/icons/graphql.svg';
 
 
-const Icon : Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
+
+const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
   // Existing icons
   arrowUp,
   code,
@@ -163,6 +164,26 @@ const Icon : Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
 
   // Additional Icons
   graphql,
+}
+
+
+type Props = SVGProps<SVGSVGElement> & {
+  name: IconName;
+  size?: number | string;
+  className?: string;
+};
+
+const Icon: FC<Props> = ({ name, size = 24, className, ...rest }) => {
+  const SVG = icons[name];
+  if (!SVG) return null; // Fallback if icon doesn't exist
+  return (
+    <SVG
+      className={cn(styles.icon, className)}
+      width={size}
+      height={size}
+      {...rest}
+    />
+  );
 };
 
 export { Icon };
