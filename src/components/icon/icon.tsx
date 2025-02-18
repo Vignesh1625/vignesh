@@ -84,7 +84,8 @@ import azure from '@/../public/img/icons/azure.svg';
 // Additional Icons
 import graphql from '@/../public/img/icons/graphql.svg';
 
-const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
+
+const Icon : Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
   // Existing icons
   arrowUp,
   code,
@@ -105,18 +106,32 @@ const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
   skype,
   telegram,
   typescript,
+  'google-maps': googleMaps,
+  jinja,
+  less,
+  linkify,
+  'rapid-api': rapidApi,
+  'simple-bar': simpleBar,
+  pusher,
+  upstash,
+  redis,
+  tailwindcss,
+  'green-sock': greenSock,
+  codepen,
+  prisma,
+  stripe,
 
   // Programming Languages
+  java,
   python,
   ccpp, // C/C++
   r,
   sql,
-  java,
 
   // Frameworks & Platforms
   flask,
+  django,
   springBoot,
-  matlab,
   hibernate,
   nodejs,
   streamlit,
@@ -125,10 +140,10 @@ const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
 
   // Databases
   postgresql,
+  mysql,
   mongodb,
   firebase,
   sqlite,
-  mysql,
 
   // Developer Tools
   git,
@@ -149,41 +164,7 @@ const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
 
   // Additional Icons
   graphql,
-  'google-maps': googleMaps,
-  jinja,
-  less,
-  linkify,
-  'rapid-api': rapidApi,
-  'simple-bar': simpleBar,
-  pusher,
-  upstash,
-  redis,
-  tailwindcss,
-  'green-sock': greenSock,
-  codepen,
-  prisma,
-  stripe,
-  django: django, // Added Django
-};
-
-type Props = SVGProps<SVGSVGElement> & {
-  name: IconName;
-  size?: number | string;
-  className?: string;
-};
-
-const Icon: FC<Props> = ({ name, size = 24, className, ...rest }) => {
-  const SVG = icons[name];
-  if (!SVG) return null; // Fallback if icon doesn't exist
-
-  return (
-    <SVG
-      className={cn(styles.icon, className)}
-      width={size}
-      height={size}
-      {...rest}
-    />
-  );
+  matlab,
 };
 
 export { Icon };
