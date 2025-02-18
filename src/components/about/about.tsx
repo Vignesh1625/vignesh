@@ -47,10 +47,8 @@ const About = () => {
     // Libraries & Data Science
     { title: 'NumPy', iconName: 'numpy', href: 'https://numpy.org/' },
     { title: 'Pandas', iconName: 'pandas', href: 'https://pandas.pydata.org/' },
-    { title: 'Matplotlib', iconName: 'matplotlib', href: 'https://matplotlib.org/' },
     { title: 'Scikit-learn', iconName: 'scikitLearn', href: 'https://scikit-learn.org/' },
     { title: 'OpenCV', iconName: 'opencv', href: 'https://opencv.org/' },
-    { title: 'NLTK', iconName: 'nltk', href: 'https://www.nltk.org/' },
 
     // Cloud Platforms
     { title: 'AWS', iconName: 'aws', href: 'https://aws.amazon.com/' },
