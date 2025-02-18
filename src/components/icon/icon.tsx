@@ -113,13 +113,11 @@ const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
   ccpp, // C/C++
   r,
   sql,
-  javascript,
   java,
 
   // Frameworks & Platforms
   flask,
   django,
-  'spring-boot': springBoot,
   hibernate,
   nodejs,
   streamlit,
@@ -139,12 +137,10 @@ const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
   kubernetes,
   maven,
   gradle,
-  'jupyter-notebook': jupyterNotebook,
 
   // Libraries & Data Science
   numpy,
   pandas,
-  'scikit-learn': scikitLearn,
   opencv,
 
   // Cloud Platforms
@@ -154,7 +150,6 @@ const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
 
   // Additional Icons
   graphql,
-  'docker': docker,
   'google-maps': googleMaps,
   jinja,
   less,
